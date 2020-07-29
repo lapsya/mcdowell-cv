@@ -26,10 +26,20 @@
 % For mathematical symbols
 \usepackage{amsmath}
 
+% For URLs
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    urlcolor = blue
+}
+
+% For colors in text
+\usepackage[dvipsnames]{xcolor}
+
 % Set applicant's personal data for header
-\name{Gayle L. McDowell}
-\address{123 Spruce St, Apt 35 \linebreak Philadelphia PA 19103}
-\contacts{(555) 555-1212 \linebreak gayle@careercup.com}
+\name{Maria Sindeeva}
+\address{Moscow, \linebreak Russian Federation}
+\contacts{+7XXXXXXXXXX \linebreak \href{mailto:mar.sindeeva@gmail.com}{mar.sindeeva@gmail.com} \linebreak \url{https://github.com/lapsya}}
 
 \begin{document}
 
@@ -38,60 +48,45 @@
 	
 	% Print the content
 	\begin{cvsection}{Employment}
-		\begin{cvsubsection}{Software Engineer, Intern}{Apple Computer}{Summer 2004}
-			iChat AV			
+		\begin{cvsubsection}{Research Intern}{Huawei Moscow Research Center}{Summer 2019}
+			Neuromorphic computing team			
 			\begin{itemize}
-				\item Reduced time to render the user’s buddy list by 75\% by implementing prediction algorithm.
-				\item Implemented iChat integration with OS X Spotlight Search by creating tool which extracts metadata from saved chat transcripts and provides metadata to a system-wide search database.
-				\item Redesigned chat file format and implemented backwards compatibility for search.
+			    \item Developed the framework for conversion of pre-trained ANN models to the spiking neural network (SNN) domain
 			\end{itemize}
 		\end{cvsubsection}
 		
-		\begin{cvsubsection}{Lead Student Ambassador}{Microsoft Corporation}{Fall 2003 -- Spring 2005}	
+		\begin{cvsubsection}{Analytics Intern}{Home Credit and Finance bank}{Fall 2017 -- Spring 2018}	
 			\begin{itemize}
-				\item Promoted to Lead Student Ambassador in Fall 2004; supervised 10 -- 15 Student Ambassadors.
-				\item Created and taught Computer Science course, CSE 099: Software Design and Development.
+				\item Developed new ML-based credit scoring models
+				\item Developed and supported an internal scoring-oriented Python module
 			\end{itemize}
 		\end{cvsubsection}
 		
-		\begin{cvsubsection}{Head Teaching Assistant}{University of Pennsylvania}{Fall 2001 -- Spring 2005}		
-			\begin{itemize}
-				\item Courses: Advanced Java III, Software Engineering, Mathematical Foundations of Computer Science I \& II.
-				\item Promoted to Head TA in Fall 2004; led weekly meetings and supervised four other TAs.
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Software Design Engineer, Intern}{Microsoft Corporation}{Summers 2001 -- 2003}
-			Visual Studio Core (Summer 2003)		
-			\begin{itemize}
-				\item Implemented a user interface for the VS open file switcher (ctrl-tab) and extended it to tool windows.
-				\item Created service to provide gradient across VS and VS add-ins. Optimized service via caching.
-			\end{itemize}
-			Programmer Productivity Research Center (Summers 2001, 2002)
-			\begin{itemize}
-				\item Built app to compute similarity of all methods in a code base; reduced time from $O(n^2)$ to $O(n\ log\ n)$. 
-				\item Created test case generation tool which creates random XML docs from XML Schema.
-			\end{itemize}
-		\end{cvsubsection}
 	\end{cvsection}
 	
 	\begin{cvsection}{Education}
-		\begin{cvsubsection}{Philadelphia, PA}{University of Pennsylvania}{Fall 2000 -- May 2005}
+		\begin{cvsubsection}{Moscow}{Skolkovo Institute of Science and Technology}{Fall 2018 -- June 2020}
 			\begin{itemize}
-				\item M.S.E. in Computer and Information Science, May 2005. GPA: 3.6
-				\item B.S.E. in Computer Science Engineering with Minor in Mathematics, May 2005.  In-major GPA: 3.4.
-				\item Graduate Coursework: Software Foundations; Computer Architecture; Algorithms; Artificial Intelligence; Comparison of Learning Algorithms; Computational Theory.
-				\item Undergraduate Coursework: Operating Systems; Databases; Algorithms; Programming Languages; Comp. Architecture; Engineering Entrepreneurship; Calculus III.
+				\item M.Sc. in Mathematics and Computer Science, Scientific computing group. GPA: 4.75 / 5
+				\item Thesis subject: Turing patterns as universal black-box adversarial attacks
+				\item Coursework: Numerical Linear Algebra, Machine Learning, Deep Learning, Bayesian Optimization, Entrepreneurship \& Innovation
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Moscow}{Lomonosov Moscow State University}{Fall 2014 -- June 2018}
+			\begin{itemize}
+				\item B.S.E. in Applied Mathematics and Informatics, Probability theory group. GPA: 4.5 / 5
+				\item Thesis subject: Random graph models for social graph research
+				\item Undergraduate Coursework: Algorithms, Operating Systems, Optimization methods, Mathematical Statistics, Stochastic Processes, Calculus
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
 	
 	\begin{cvsection}{Technical Experience}
-		\begin{cvsubsection}{Projects}{}{}
+		\begin{cvsubsection}{}{}{}
 			\begin{itemize}
-				\item \textbf{Multi-User Drawing Tool} (2004). Electronic classroom where multiple users can view and simultaneously draw on a “chalkboard” with each person’s edits synchronized.  C++, MFC
-				\item \textbf{Synchronized Calendar} (2003 – 2004). Desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users.  C\#.NET, SQL, XML
-				\item \textbf{Operating System} (2002).  UNIX-style OS with scheduler, file system, text editor and calculator. C
+			    \item \textbf{Master's thesis} (2018-2020). Researched the applicability of Turing patterns as adversarial attacks. Constructed new type of black-box universal decision-based adversarial attacks: cellular automata generated paterns; that excels current universal attacks performance. Co-authored a paper on this subject. \textbf{(Python: \texttt{pytorch, nevergrad})}
+			    \item \textbf{Spiking neural networks research} (2019). Researched the convertability of YOLO network architectures to the spiking networks domain. Expanded the conversion framework to support conversion of such models to SNNs. \textbf{(Python: \texttt{tensorflow, keras})}
+			    \item \textbf{Credit Scoring} (2017-2018). Developed new credit scoring model from the construction and analysis of predictors to analytical monitoring of the performance of deployed models. Developed an internal Python module for statistical methods and interactive visualization. \textbf{(Python: \texttt{numpy, scipy, pandas, scikit-learn, ipywidgets}; databases: \texttt{Oracle PL/SQL}; monitoring:} Tableau, Excel\textbf{)}
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
@@ -99,8 +94,8 @@
 	\begin{cvsection}{Additional Experience and Awards}
 		\begin{cvsubsection}{}{}{}	
 			\begin{itemize}
-				\item \textbf{Instructor (2003 – 2005):} Taught two full-credit Computer Science courses; average ratings of 4.8 out of 5.0.
-				\item \textbf{Third Prize, Senior Design Projects:} Awarded 3rd prize for Synchronized Calendar project, out of 100 projects.
+			    \item \textbf{NeurIPS paper submission} (2020). Co-authorship of the paper "Adversarial Turing Patterns from Cellular Automata"
+			    \item \textbf{Open source SkolTech course projects} (2018 - 2020). See \href{https://github.com/lapsya}{my GitHub page} for more information
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
@@ -108,8 +103,10 @@
 	\begin{cvsection}{Languages and Technologies}
 		\begin{cvsubsection}{}{}{}	
 			\begin{itemize}
-				\item C++; C; Java; Objective-C; C\#.NET; SQL; JavaScript; XSLT; XML (XSD) Schema 
-				\item Visual Studio; Microsoft SQL Server; Eclipse; XCode; Interface Builder
+				\item Python (advanced): experience with \texttt{pytorch, tensorflow, keras, pandas, numpy, scipy, scikit-learn}
+				\item Git, Oracle PL/SQL, Docker
+				
+				\item English (fluent)
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
