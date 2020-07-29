@@ -1,3 +1,10 @@
+# This is a repository for my CV based on the McDowell CV template
+
+Final CV pdf can be downloaded through Overleaf at https://www.overleaf.com/read/dgfnbycngrxm
+
+
+--------------------
+
 # McDowell CV
 McDowell CV is a LuaLaTeX class for building neat and space-efficient CVs using the design originally proposed by Gayle L. McDowell at 
 http://www.careercup.com/resume. 
